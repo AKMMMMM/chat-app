@@ -1,0 +1,247 @@
+:root {
+  /* Text */
+
+  --Pale-Violet: hsl(276, 100%, 81%);
+  --Moderate-Violet: hsl(276, 55%, 52%);
+  --Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+  --Grayish-Blue: hsl(206, 6%, 79%);
+  --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+  --Dark-Grayish-Violet: hsl(270, 7%, 64%);
+
+  /* Gradients
+
+These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient: */
+
+  --Light-Magenta: hsl(293, 100%, 63%);
+  --Light-Violet: hsl(264, 100%, 61%);
+
+  /* Secondary */
+
+  --White: hsl(0, 0%, 100%);
+  --Light-Grayish-Violet: hsl(270, 20%, 96%);
+  --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+  --Very-Light-Magenta: hsl(289, 100%, 72%);
+
+  /* font size */
+
+  --Font-size: 16px;
+
+  /* font family */
+
+  --font-family: "Rubik", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--Light-Grayish-Violet);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  margin: 50px 300px;
+  margin-top: -40%;
+  /* min-height: 100vh; */
+}
+
+.container {
+  background-color: var(--Grayish-Blue);
+  min-width: 35%;
+  border-radius: 30px;
+  height: 530px;
+  position: relative;
+  border: 10px solid var(--White);
+}
+
+.top-white {
+  width: 150px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--White);
+  z-index: 1;
+  border-radius: 0 0 30px 30px;
+  position: absolute;
+  left: 20%;
+  top: -1px;
+  overflow: hidden;
+}
+
+.name {
+  display: flex;
+  gap: 30px;
+  background: linear-gradient(#e66465, #9198e5);
+  padding: 20px;
+  border-radius: 20px 20px 5px 5px;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.fa-solid {
+  transform: translateY(20px);
+  color: white;
+}
+
+.avatar {
+  border-radius: 100%;
+  height: 30px;
+  border: 1px solid white;
+  transform: translate(-25px, 10px);
+}
+
+.left {
+  transform: translate(-45px, 10px);
+}
+
+.name h4 {
+  color: var(--White);
+}
+
+.name-p {
+  color: var(--Dark-Grayish-Violet);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.top-left {
+  padding: 10px;
+}
+
+.grey {
+  margin: 10px 0;
+  color: var(--Moderate-Violet);
+  background-color: var(--Pale-Violet);
+  font-size: 0.6rem;
+  max-width: 60%;
+  padding: 5px;
+  border-radius: 10px 10px 10px 0;
+}
+
+.replay {
+  max-width: 60%;
+  transform: translateX(65%);
+}
+
+.dog {
+  border-radius: 8px;
+}
+
+.white {
+  background-color: var(--White);
+  margin: 10px 0;
+  font-size: 0.6rem;
+  opacity: .7;
+  border-radius: 10px 10px 0 10px;
+  padding: 5px;
+}
+
+.btn {
+  display: block;
+  margin: 10px 0;
+  min-width: 70%;
+  border-radius: 10px 10px 10px 0;
+  border: none;
+}
+
+.btn p {
+  background-color: hsl(293, 100%, 63%);
+  padding: 10px;
+  border-radius: 10px 10px 10px 0;
+  border: none;
+  font-size: 0.7rem;
+  color: var(--White);
+}
+
+span {
+  font-size: 0.8rem;
+  float: right;
+}
+
+.white-btn {
+  min-width: 90%;
+  display: flex;
+  align-items: center;
+  background-color: var(--White);
+  border: none;
+  padding: 10px 10px;
+  border-radius: 30px;
+  margin-left: 10px;
+  font-size: 0.7rem;
+  /* opacity: .7; */
+}
+
+.fa-angle-right {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  transform: translate(400%, -5%);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.article {
+  z-index: 10;
+}
+
+.article h1 {
+  color: var(--Very-Dark-Desaturated-Violet);
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+}
+
+.article p {
+  color: var(--Grayish-Blue);
+}
+
+.top {
+  width: 700px;
+  height: 700px;
+  background-color: var(--Light-Violet);
+  z-index: -1;
+  border-radius: 0 0 100% 100%;
+  transform: translateX(-50%);
+}
+.bottom {
+  float: right;
+  width: 700px;
+  height: 700px;
+  background-color: var(--Dark-Grayish-Violet);
+  z-index: -2;
+  border-radius: 0 0 100% 100%;
+  margin-top: -40%;
+  margin-right: -20%;
+  transform: rotate(180deg);
+  opacity: .1;
+}
+
+@media (max-width: 700px) {
+  main {
+    display: block;
+  }
+
+  .container {
+    width: 320%;
+  }
+
+  .article {
+    width: 320%;
+    margin-top: 40px;
+  }
+}
